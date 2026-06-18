@@ -1,0 +1,6 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+df = pd.read_csv("alphabet_stock_data.csv")
+df.plot(x='Date', y='Volume', kind='bar')
+plt.title("Trading Volume")
+plt.show()
