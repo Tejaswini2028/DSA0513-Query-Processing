@@ -1,0 +1,5 @@
+import pandas as pd
+df = pd.read_excel(r"C:\Users\Prabh\Downloads\sales_data_pivot.xlsx")
+pivot = pd.pivot_table(df,values='Sale_amt',index=['Region', 'Manager', 'SalesMan'],aggfunc='sum')
+print(pivot)
+
