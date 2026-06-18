@@ -1,0 +1,4 @@
+import pandas as pd
+df = pd.read_excel(r"C:\Users\Prabh\Downloads\sales_data(1).xlsx")
+pivot = pd.pivot_table(df,values='Units',index='Item',aggfunc='sum')
+print(pivot)
