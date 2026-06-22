@@ -1,0 +1,7 @@
+import pandas as pd
+df = pd.DataFrame({
+    'Name':['Alice','Bob','Charlie','David']
+})
+substring = 'ar'
+result = df['Name'].str.find(substring)
+print(result)
